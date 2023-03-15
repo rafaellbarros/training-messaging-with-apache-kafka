@@ -50,3 +50,11 @@ bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic STORE_NE
 
 ```
 
+## Describe Kafka Topics
+
+```sh
+
+bin/kafka-topics.sh --bootstrap-server localhost:9092 --describe
+
+```
+
