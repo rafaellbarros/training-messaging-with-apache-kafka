@@ -57,3 +57,21 @@ $ bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic STORE_
 $ bin/kafka-topics.sh --bootstrap-server localhost:9092 --describe
 
 ```
+
+## Alter Kafka Topics
+
+### The number of partitions must be greater than or equal to the number of consumers within a group
+
+```sh
+
+$ bin/kafka-topics.sh --alter --bootstrap-server localhost:9092 --topic ECOMMERCE_NEW_ORDER --partitions 3
+
+```
+
+## List all Kafka Groups
+
+```sh
+
+bin/kafka-consumer-groups.sh --all-groups --bootstrap-server localhost:9092 --describe
+
+```
